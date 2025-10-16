@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    max-width: 100%;
+    max-width: 1920px;
 }
 
 :root {
@@ -25,6 +25,17 @@ body {
     line-height: 1.6;
     color: var(--grey-dark);
     background: var(--white);
+    /* margin-left: 100px;
+    margin-right: 100px; */
+    overflow-x: hidden;
+    background-image:url(./img/light-grey-dots-background_78370-2583.jpg);
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.logos {
+    height: 60px;
+    width: auto;
 }
 
 .container {
@@ -341,9 +352,9 @@ body {
     font-size: 0.95rem;
 }
 
-.about {
+/* .about {
     background: var(--grey-light);
-}
+} */
 
 .about-content {
     display: grid;
@@ -500,7 +511,7 @@ body {
 }
 
 .clients {
-    background: var(--white);
+    /* background: var(--white); */
     padding: 60px 0;
     overflow: hidden;
 }
@@ -527,7 +538,7 @@ body {
     }
 }
 
-.client-logo {
+/* .client-logo {
     min-width: 150px;
     height: 80px;
     background: var(--grey-light);
@@ -545,7 +556,47 @@ body {
     background: var(--maroon-primary);
     color: var(--white);
     transform: scale(1.05);
+} */
+
+.logo-slider {
+  overflow: hidden;
+  width: 100%;
+  background: transparent;
+  margin: 0 auto;
+  height: 80px; /* adjust based on logo size */
 }
+
+.logo-track {
+  display: flex;
+  align-items: center;
+  animation: scroll 20s linear infinite;
+  width: max-content;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.client-logo {
+  min-width: 150px;
+  height: 80px;
+  background: var(--grey-light);
+  border: 2px solid var(--maroon-primary);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: var(--maroon-primary);
+  margin: 0 30px;
+  transition: all 0.3s linear;
+}
+
 
 .contact {
     background: var(--grey-light);
@@ -707,6 +758,8 @@ body {
 
 .core-values {
     margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .values-grid {
