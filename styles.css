@@ -85,9 +85,9 @@ body {
 
 .logo h1 {
     color: var(--maroon-primary);
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 2px;
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: 1px;
 }
 
 .nav-menu {
@@ -547,6 +547,12 @@ body {
     display: flex;
     gap: 60px;
     animation: scroll 30s linear infinite;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+
 }
 
 @keyframes scroll {
