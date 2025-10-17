@@ -34,7 +34,7 @@ body {
 }
 
 .logos {
-    height: 60px;
+    height: 75px;
     width: auto;
 }
 
@@ -80,7 +80,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 15px 50px;
 }
 
 .logo h1 {
@@ -164,7 +164,7 @@ body {
 
 .dropdown-menu-nested {
     position: absolute;
-    left: 100%;
+    right: 100%;
     top: 0;
     background: var(--white);
     box-shadow: 0 4px 15px var(--shadow);
@@ -361,6 +361,14 @@ body {
     grid-template-columns: 1fr;
     gap: 50px;
     align-items: start;
+}
+
+.about-text {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 4px solid var(--gold);
+    box-shadow: 0 3px 15px var(--shadow);
 }
 
 .about-text h3 {
