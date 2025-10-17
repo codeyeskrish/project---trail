@@ -420,6 +420,18 @@ body {
     gap: 30px;
 }
 
+.imgs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 4px solid var(--gold);
+    box-shadow: 0 3px 15px var(--shadow);
+}
+
 .service-card {
     background: var(--white);
     padding: 40px 30px;
