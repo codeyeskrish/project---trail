@@ -40,8 +40,7 @@ body {
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    margin: 0 auto; 
 }
 
 .section {
@@ -80,14 +79,19 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 50px;
+    padding: 15px 0px;
+}
+
+.imags{
+    height: 500px;
+    width: auto;
+    margin-bottom: 50px;
 }
 
 .logo h1 {
     color: var(--maroon-primary);
-    font-size: 1.3rem;
-    font-weight: 800;
-    letter-spacing: 1px;
+    font-size: 1.8rem;
+    font-weight: 750;
 }
 
 .nav-menu {
