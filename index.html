@@ -1,164 +1,219 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thiagarajar Telekom Solutions</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
     <header class="header">
-        <div class="container">
-            <div class="logo">
-                <!-- <h1>TTSL</h1> -->
-                 <img class="logos" src="./img/logo.png" alt="">
-                 <h1>Thigarajar Telekom Solutions Pvt Ltd</h1>
-            </div>
-            <nav class="nav" id="nav">
-                <ul class="nav-menu">
-                    <li><a href="./index.html" class="nav-link active">Home</a></li>
-                    <li><a href="./about.html" class="nav-link">About Us</a></li>
-                    <li class="dropdown">
-                        <a href="./services.html" class="nav-link">Services</a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-nested">
-                                <a href="antenna-design.html">Design Services</a>
-                                <ul class="dropdown-menu-nested">
-                                    <li><a href="antenna-design.html">Antenna Design</a></li>
-                                    <li><a href="rf-design.html">RF Design</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-nested">
-                                <a href="antenna-testing.html">Testing Services</a>
-                                <ul class="dropdown-menu-nested">
-                                    <li><a href="antenna-testing.html">Antenna Testing</a></li>
-                                    <li><a href="rf-testing.html">RF Testing</a></li>
-                                    <li><a href="environmental-testing.html">Environmental Test Screening</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="./products.html" class="nav-link">Products</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="gnss-missile.html">GNSS Antenna – Missile Application</a></li>
-                            <li><a href="gnss-airborne.html">GNSS Antenna – Airborne Application</a></li>
-                            <li><a href="anti-jamming.html">GNSS Anti-Jamming Solutions</a></li>
-                            <li><a href="rf-components.html">RF Components</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./contact.html" class="nav-link">Contact</a></li>
-                </ul>
-                <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
+      <div class="container">
+        <div class="logo">
+          <!-- <h1>TTSL</h1> -->
+          <img class="logos" src="./img/logo.png" alt="" />
+          <h1>Thigarajar Telekom Solutions Pvt Ltd</h1>
         </div>
+        <nav class="nav" id="nav">
+          <ul class="nav-menu">
+            <li><a href="./index.html" class="nav-link active">Home</a></li>
+            <li><a href="./about.html" class="nav-link">About Us</a></li>
+            <li class="dropdown">
+              <a href="./services.html" class="nav-link">Services</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-nested">
+                  <a href="antenna-design.html">Design Services</a>
+                  <ul class="dropdown-menu-nested">
+                    <li><a href="antenna-design.html">Antenna Design</a></li>
+                    <li><a href="rf-design.html">RF Design</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-nested">
+                  <a href="antenna-testing.html">Testing Services</a>
+                  <ul class="dropdown-menu-nested">
+                    <li><a href="antenna-testing.html">Antenna Testing</a></li>
+                    <li><a href="rf-testing.html">RF Testing</a></li>
+                    <li><a href="environmental-testing.html">Environmental Test Screening</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="products.html" class="nav-link">Products</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-nested">
+                  <a href="glonass-l1-Band.html">GNSS Antenna – Missile Application</a>
+                  <ul class="dropdown-menu-nested">
+                    <li><a href="glonass-l1-Band.html">GPS/Glonass L1 Band</a></li>
+                    <li><a href="irnss-l5.html">GPS/Glonass L1 /IRNSS L5</a></li>
+                    <li><a href="irnss-l5-sband.html">GPS/Glonass L1 /IRNSS L5/ S-Band</a></li>
+                    <li><a href="irnss-l1-l2.html">GPS/Glonass L1 /L2 / IRNSS L5/ S-band</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-nested">
+                  <a href="airborne-glonass-l1.html">GNSS Antenna – Airborne Application</a>
+                  <ul class="dropdown-menu-nested">
+                    <li><a href="airborne-glonass-l1.html">GPS/Glonass L1 Band</a></li>
+                    <li><a href="airborne-irnss-l5.html">GPS/Glonass L1 /IRNSS L5</a></li>
+                    <li>
+                      <a href="airborne-irnss-l5-sband.html">GPS/Glonass L1 /IRNSS L5/ S-Band</a>
+                    </li>
+                    <li>
+                      <a href="airborne-irnss-l1-l2.html">GPS/Glonass L1 /L2 / IRNSS L5/ S-band</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-nested">
+                  <a href="missile-application.html">GNSS Anti-Jamming Solutions</a>
+                  <ul class="dropdown-menu-nested">
+                    <li><a href="missile-application.html">Missile Application</a></li>
+                    <li><a href="standalone-solution.html">Standalone Solution</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-nested">
+                  <a href="rf-couplers.html">RF Components</a>
+                  <ul class="dropdown-menu-nested">
+                    <li><a href="rf-couplers.html">Couplers</a></li>
+                    <li><a href="rf-splitters.html">Splitters</a></li>
+                    <li><a href="rf-diplexers.html">Diplexers</a></li>
+                    <li><a href="rf-isolators.html">Attentuators</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="./contact.html" class="nav-link">Contact</a></li>
+          </ul>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <section id="home" class="hero">
-            <div class="carousel">
-                <div class="carousel-track" id="carouselTrack">
-                    <div class="carousel-slide active">
-                        <img src="./img/c1.jpg">
-                        <div class="carousel-content">
-                            <h2>Leading Wireless Design Solutions</h2>
-                            <p>Transforming research innovations into cutting-edge products</p>
-                        </div>
-                    </div>
-                    <div class="carousel-slide">
-                        <!-- <img src="./img/Networks_Telecommunications.jpg" alt=""> -->
-                        <img src="https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="RF Technology">
-                        <div class="carousel-content">
-                            <h2>Advanced RF & Antenna Design</h2>
-                            <p>State-of-the-art engineering for wireless applications</p>
-                        </div>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="./img/c2.jpg" alt="Testing Facility">
-                        <div class="carousel-content">
-                            <h2>Comprehensive Testing Services</h2>
-                            <p>OTA, EMI/EMC, and RF parameter testing</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-btn prev" id="prevBtn">‹</button>
-                <button class="carousel-btn next" id="nextBtn">›</button>
+      <section id="home" class="hero">
+        <div class="carousel">
+          <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-slide active">
+              <img src="./img/c1.jpg" />
+              <div class="carousel-content">
+                <h2>Leading Wireless Design Solutions</h2>
+                <p>Transforming research innovations into cutting-edge products</p>
+              </div>
             </div>
-
-            <div class="highlights container">
-                <div class="highlight-card" data-animate="counter">
-                    <div class="highlight-icon"><span class="counter" data-target="15">0</span>+</div>
-                    <h3>Years of Experience</h3>
-                    <p>Rich R&D experience in RF/Microwaves</p>
-                </div>
-                <div class="highlight-card">
-                    <div class="highlight-icon">ISO</div>
-                    <h3>ISO 9001:2015</h3>
-                    <p>Certified research-driven company</p>
-                </div>
-                <div class="highlight-card" data-animate="counter">
-                    <div class="highlight-icon"><span class="counter" data-target="100">0</span>+</div>
-                    <h3>Projects Delivered</h3>
-                    <p>Serving space, defense, and commercial sectors</p>
-                </div>
-                <div class="highlight-card" data-animate="counter">
-                    <div class="highlight-icon"><span class="counter" data-target="50">0</span>+</div>
-                    <h3>Client Satisfaction</h3>
-                    <p>Trusted by leading organizations</p>
-                </div>
+            <div class="carousel-slide">
+              <!-- <img src="./img/Networks_Telecommunications.jpg" alt=""> -->
+              <img
+                src="https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=1920"
+                alt="RF Technology"
+              />
+              <div class="carousel-content">
+                <h2>Advanced RF & Antenna Design</h2>
+                <p>State-of-the-art engineering for wireless applications</p>
+              </div>
             </div>
-        </section>
+            <div class="carousel-slide">
+              <img src="./img/c2.jpg" alt="Testing Facility" />
+              <div class="carousel-content">
+                <h2>Comprehensive Testing Services</h2>
+                <p>OTA, EMI/EMC, and RF parameter testing</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-btn prev" id="prevBtn">‹</button>
+          <button class="carousel-btn next" id="nextBtn">›</button>
+        </div>
 
-        <section id="about" class="about section">
-            <div class="container">
-                <!-- <h2 class="section-title">About Us</h2> -->
-                <div class="about-content">
-                    <!-- <div class="about-text">
+        <div class="highlights container">
+          <div class="highlight-card" data-animate="counter">
+            <div class="highlight-icon"><span class="counter" data-target="15">0</span>+</div>
+            <h3>Years of Experience</h3>
+            <p>Rich R&D experience in RF/Microwaves</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">ISO</div>
+            <h3>ISO 9001:2015</h3>
+            <p>Certified research-driven company</p>
+          </div>
+          <div class="highlight-card" data-animate="counter">
+            <div class="highlight-icon"><span class="counter" data-target="100">0</span>+</div>
+            <h3>Projects Delivered</h3>
+            <p>Serving space, defense, and commercial sectors</p>
+          </div>
+          <div class="highlight-card" data-animate="counter">
+            <div class="highlight-icon"><span class="counter" data-target="50">0</span>+</div>
+            <h3>Client Satisfaction</h3>
+            <p>Trusted by leading organizations</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about section">
+        <div class="container">
+          <!-- <h2 class="section-title">About Us</h2> -->
+          <div class="about-content">
+            <!-- <div class="about-text">
                         <h3>Profile</h3>
                         <p>TTSL is an ISO 9001:2015 certified research-driven wireless design company, incubated out of 25 years of rich R&D experience in the field of RF/Microwaves in the TIFAC-CORE at Thiagarajar College of Engineering, Madurai.</p>
                         <p>We offer state-of-the-art Antenna design, RF component design, RF system design and transmitter and receiver design for a range of current and emergent wireless applications like space, defense, vehicular tracking, coverage and in-building solutions.</p>
                     </div> -->
-                    <div class="about-values">
-                        <div class="value-box">
-                            <h4>Vision</h4>
-                            <p>TTSL aims at redefining wireless technologies by delivering high quality wireless products and services for global customers based on the rich research expertise aided by our state of art infrastructure with customer delight as prime focus.</p>
-                        </div>
-                        <div class="value-box">
-                            <h4>Mission</h4>
-                            <p>To excel in RF and antenna design by integrating advanced engineering, precision manufacturing, and continuous innovation to create high-performance wireless solutions.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="about-values">
+              <div class="value-box">
+                <h4>Vision</h4>
+                <p>
+                  TTSL aims at redefining wireless technologies by delivering high quality wireless
+                  products and services for global customers based on the rich research expertise
+                  aided by our state of art infrastructure with customer delight as prime focus.
+                </p>
+              </div>
+              <div class="value-box">
+                <h4>Mission</h4>
+                <p>
+                  To excel in RF and antenna design by integrating advanced engineering, precision
+                  manufacturing, and continuous innovation to create high-performance wireless
+                  solutions.
+                </p>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <div class="core-values">
-                    <h3 class="section-subtitle">Core Values</h3>
-                    <div class="values-grid">
-                        <div class="value-card">
-                            <h4>Innovation</h4>
-                            <p>Pushing the boundaries of wireless technology through continuous research and creative problem-solving.</p>
-                        </div>
-                        <div class="value-card">
-                            <h4>Quality & Precision</h4>
-                            <p>Excellence in every detail from concept design to final validation following international standards.</p>
-                        </div>
-                        <div class="value-card">
-                            <h4>Integrity</h4>
-                            <p>Operating with honesty, fairness, and accountability in all our interactions.</p>
-                        </div>
-                        <div class="value-card">
-                            <h4>Customer Commitment</h4>
-                            <p>Delivering tailored RF solutions that accelerate innovation and ensure commercial success.</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="core-values">
+        <h3 class="section-subtitle">Core Values</h3>
+        <div class="values-grid">
+          <div class="value-card">
+            <h4>Innovation</h4>
+            <p>
+              Pushing the boundaries of wireless technology through continuous research and creative
+              problem-solving.
+            </p>
+          </div>
+          <div class="value-card">
+            <h4>Quality & Precision</h4>
+            <p>
+              Excellence in every detail from concept design to final validation following
+              international standards.
+            </p>
+          </div>
+          <div class="value-card">
+            <h4>Integrity</h4>
+            <p>Operating with honesty, fairness, and accountability in all our interactions.</p>
+          </div>
+          <div class="value-card">
+            <h4>Customer Commitment</h4>
+            <p>
+              Delivering tailored RF solutions that accelerate innovation and ensure commercial
+              success.
+            </p>
+          </div>
+        </div>
+      </div>
 
-       <!-- <section id="services" class="services section">
+      <!-- <section id="services" class="services section">
             <div class="container">
                 <h2 class="section-title">Our Services</h2>
 
@@ -317,10 +372,10 @@
             </div>
         </section> -->
 
-        <section class="clients section">
-            <div class="container">
-                <h2 class="section-title">Our Valued Clients</h2>
-                <!-- <div class="logo-scroll">
+      <section class="clients section">
+        <div class="container">
+          <h2 class="section-title">Our Valued Clients</h2>
+          <!-- <div class="logo-scroll">
                     <div class="logo-track" id="logoTrack">
                         <div class="client-logo"><img class="client-logo" src="./img/Honeywell-Logo.png" alt=""></div>
                         <div class="client-logo">CLIENT 2</div>
@@ -336,20 +391,44 @@
                         <div class="client-logo">CLIENT 4</div>
                     </div>
                 </div> -->
-                <div class="logo-slider">
-                <div class="logo-track">
-                    <div class=""><img class="client-logo" src="./img/RCI_Logo.png" alt="Client 6"></div>
-                    <div class=""><img class="client-logo" src="./img/BrahMos.png" alt="Client 7"></div>
-                    <div class=""><img class="client-logo" src="./img/ISRO-Indian_Space_Research_Organisation-Logo-Slogan-tagline-vision-mission-motto-1536x1024.png" alt="Client 8"></div>
-                    <div class=""><img class="client-logo" src="./img/Accord.png" alt="Client 5"></div>
-                    <div class=""><img class="client-logo" src="./img/bharat-electronics-logo-png_seeklogo-304466.png" alt="Client 9"></div>
-                    <!-- <div class=""><img class="client-logo" src="./img/" alt="Client 10"></div> -->
-                    <div class=""><img class="client-logo" src="./img/image.jpg" alt="Client 2"></div>
-                    <div class=""><img class="client-logo" src="./img/Honeywell-Logo.png" alt="Client 1"></div>
-                    <div class=""><img class="client-logo" src="./img/barandbench_2023-10_9cdcb9c9-3af3-4a62-9f3c-820b5d9240d2_11.avif" alt="Client 3"></div>
-                    <div class=""><img class="client-logo" src="./img/DataPatterns.png" alt="Client 4"></div>
-                    
-                    <!-- <div class=""><img class="client-logo" src="./img/" alt="Client 8"></div>
+          <div class="logo-slider">
+            <div class="logo-track">
+              <div class="">
+                <img class="client-logo" src="./img/RCI_Logo.png" alt="Client 6" />
+              </div>
+              <div class=""><img class="client-logo" src="./img/BrahMos.png" alt="Client 7" /></div>
+              <div class="">
+                <img
+                  class="client-logo"
+                  src="./img/ISRO-Indian_Space_Research_Organisation-Logo-Slogan-tagline-vision-mission-motto-1536x1024.png"
+                  alt="Client 8"
+                />
+              </div>
+              <div class=""><img class="client-logo" src="./img/Accord.png" alt="Client 5" /></div>
+              <div class="">
+                <img
+                  class="client-logo"
+                  src="./img/bharat-electronics-logo-png_seeklogo-304466.png"
+                  alt="Client 9"
+                />
+              </div>
+              <!-- <div class=""><img class="client-logo" src="./img/" alt="Client 10"></div> -->
+              <div class=""><img class="client-logo" src="./img/image.jpg" alt="Client 2" /></div>
+              <div class="">
+                <img class="client-logo" src="./img/Honeywell-Logo.png" alt="Client 1" />
+              </div>
+              <div class="">
+                <img
+                  class="client-logo"
+                  src="./img/barandbench_2023-10_9cdcb9c9-3af3-4a62-9f3c-820b5d9240d2_11.avif"
+                  alt="Client 3"
+                />
+              </div>
+              <div class="">
+                <img class="client-logo" src="./img/DataPatterns.png" alt="Client 4" />
+              </div>
+
+              <!-- <div class=""><img class="client-logo" src="./img/" alt="Client 8"></div>
                     <div class=""><img class="client-logo" src="./img/" alt="Client 9"></div>
                     <div class=""><img class="client-logo" src="./img/" alt="Client 10"></div>
                     <div class=""><img class="client-logo" src="./img/" alt="Client 11"></div>
@@ -357,16 +436,16 @@
                     <div class=""><img class="client-logo" src="./img/" alt="Client 13"></div>
                     <div class=""><img class="client-logo" src="./img/" alt="Client 14"></div>
                     <div class=""><img class="client-logo" src="./img/" alt="Client 15"></div> -->
-                    <!-- Repeat same logos to make the loop seamless -->
-                    <!-- <div class=""><img class="client-logo" src="./img/image.jpg" alt="Client 2"></div>
+              <!-- Repeat same logos to make the loop seamless -->
+              <!-- <div class=""><img class="client-logo" src="./img/image.jpg" alt="Client 2"></div>
                     <div class=""><img class="client-logo" src="./img/barandbench_2023-10_9cdcb9c9-3af3-4a62-9f3c-820b5d9240d2_11.avif" alt="Client 3"></div>
                     <div class=""><img class="client-logo" src="./img/data-patterns-logo-ipo.jpg" alt="Client 4"></div> -->
-                </div>
-                </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- <section id="contact" class="contact section">
+      <!-- <section id="contact" class="contact section">
             <div class="container">
                 <h2 class="section-title">Contact Us</h2>
                 <div class="contact-content">
@@ -411,37 +490,39 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Thiagarajar Telekom Solutions</h4>
-                    <p>ISO 9001:2015 Certified Research-Driven Wireless Design Company</p>
-                    <a href="https://maps.app.goo.gl/eRYNfm5otTtNqAzu5"><img class="map" src="./img/Google_Maps-Logo.wine.png" alt=""></a>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="products.html">Products</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="antenna-design.html">Antenna Design</a></li>
-                        <li><a href="rf-design.html">RF Design</a></li>
-                        <li><a href="antenna-testing.html">Testing Services</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Thiagarajar Telekom Solutions (P) Limited. All rights reserved.</p>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Thiagarajar Telekom Solutions</h4>
+            <p>ISO 9001:2015 Certified Research-Driven Wireless Design Company</p>
+            <a href="https://maps.app.goo.gl/eRYNfm5otTtNqAzu5"
+              ><img class="map" src="./img/Google_Maps-Logo.wine.png" alt=""
+            /></a>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="products.html">Products</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="antenna-design.html">Antenna Design</a></li>
+              <li><a href="rf-design.html">RF Design</a></li>
+              <li><a href="antenna-testing.html">Testing Services</a></li>
+            </ul>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Thiagarajar Telekom Solutions (P) Limited. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
