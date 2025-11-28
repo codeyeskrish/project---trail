@@ -17,7 +17,7 @@
     --grey-dark: #424242;
     --white: #FFFFFF;
     --shadow: rgba(139, 21, 56, 0.1);
-    --transition: all 0.3s ease;
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
@@ -153,13 +153,14 @@ body {
     top: 100%;
     left: 0;
     background: var(--white);
-    box-shadow: 0 4px 15px var(--shadow);
+    box-shadow: 0 5px 20px var(--shadow);
     list-style: none;
-    min-width: 220px;
+    min-width: 250px;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-10px);
+    transform: translateY(-10px) translateZ(0);
     transition: var(--transition);
+    z-index: 1000;
     border-top: 3px solid var(--maroon-primary);
 }
 
@@ -239,21 +240,14 @@ body {
 .carousel-track {
     display: flex;
     height: 100%;
-    transition: transform 0.5s ease;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .carousel-slide {
     min-width: 100%;
     height: 100%;
     position: relative;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    display: none;
-}
-
-.carousel-slide.active {
-    opacity: 1;
-    display: block;
+    flex-shrink: 0;
 }
 
 .carousel-slide img {
@@ -273,17 +267,31 @@ body {
     padding: 40px 60px;
     border-radius: 10px;
     backdrop-filter: blur(5px);
+    z-index: 2;
+    max-width: 800px;
 }
 
 .carousel-content h2 {
     font-size: 3rem;
-    margin-bottom: 15px;
-    color: var(--white);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .carousel-content p {
     font-size: 1.3rem;
-    color: var(--gold);
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
 }
 
 .carousel-btn {
@@ -296,12 +304,14 @@ body {
     font-size: 3rem;
     padding: 10px 20px;
     cursor: pointer;
-    transition: var(--transition);
+    transition: all 0.3s ease;
     border-radius: 5px;
+    z-index: 10;
 }
 
 .carousel-btn:hover {
     background: var(--maroon-primary);
+    transform: translateY(-50%) scale(1.05);
 }
 
 .carousel-btn.prev {
@@ -333,7 +343,7 @@ body {
     transition: var(--transition);
     opacity: 0;
     transform: translateY(30px);
-    animation: fadeInUp 0.6s ease forwards;
+    animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 .highlight-card:nth-child(1) {
@@ -362,6 +372,7 @@ body {
 .highlight-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 30px var(--shadow);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .highlight-icon {
@@ -534,6 +545,13 @@ body {
     gap: 30px;
 }
 
+.service-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
 .service-card {
     background: var(--white);
     padding: 40px 30px;
@@ -695,8 +713,9 @@ body {
     display: flex;
     align-items: center;
     gap: 60px;
-    animation: scroll 15s linear infinite;
+    animation: scroll 30s linear infinite;
     width: max-content;
+    will-change: transform;
 }
 
 @keyframes scroll {
@@ -721,7 +740,13 @@ body {
     font-weight: 600;
     color: var(--maroon-primary);
     margin: 0 30px;
-    transition: all 0.3s linear;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+}
+
+.client-logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px var(--shadow);
 }
 
 /* ===================================
@@ -755,6 +780,7 @@ body {
     color: var(--maroon-primary);
     font-size: 1.2rem;
     margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .info-item p {
@@ -781,13 +807,15 @@ body {
     border-radius: 5px;
     font-family: inherit;
     font-size: 1rem;
-    transition: var(--transition);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
     border-color: var(--maroon-primary);
+    box-shadow: 0 0 0 3px rgba(139, 21, 56, 0.1);
+    transform: translateY(-2px);
 }
 
 .btn-submit {
@@ -807,6 +835,7 @@ body {
     background: var(--maroon-dark);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px var(--shadow);
+    transition: all 0.3s ease;
 }
 
 /* ===================================
@@ -949,11 +978,13 @@ body {
     font-size: 1rem;
     text-decoration: none;
     border-radius: 5px;
-    transition: var(--transition);
+    transition: all 0.4s ease-in-out;
 }
 
 .download-btn:hover {
     background-color: #ea392c;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(162, 18, 9, 0.3);
 }
 
 /* ===================================
@@ -1030,3 +1061,5 @@ body {
         margin-right: 20px;
     }
 }
+
+/* Cache Buster - Updated: 2025-11-28 10:19:07 */
