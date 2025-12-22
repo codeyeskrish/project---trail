@@ -412,7 +412,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
-    align-items: center;
+    align-items: stretch;
 }
 
 .about-text {
@@ -421,6 +421,9 @@ body {
     border-radius: 10px;
     border-left: 4px solid var(--gold);
     box-shadow: 0 3px 15px var(--shadow);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .about-text h3 {
@@ -515,14 +518,77 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 20px;
     background: var(--white);
     padding: 30px;
     border-radius: 10px;
     border-left: 4px solid var(--gold);
     box-shadow: 0 3px 15px var(--shadow);
+    height: 100%;
 }
 
+.imags {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+
+/* ===================================
+   SPECIFICATION TABLES
+   =================================== */
+.spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.spec-table th,
+.spec-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.spec-table th {
+    background: var(--maroon-primary);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.spec-table td:first-child {
+    font-weight: 500;
+    color: var(--grey-dark);
+    width: 50%;
+}
+
+.spec-table td:last-child {
+    color: var(--grey-dark);
+}
+
+.spec-table tr:hover {
+    background: var(--grey-light);
+    transition: background 0.2s ease;
+}
+
+.spec-table tr:last-child td {
+    border-bottom: none;
+}
+
+.about-text h4 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: var(--maroon-primary);
+    font-size: 1.3rem;
+}
+
+.about-text h4:first-of-type {
+    margin-top: 0;
+}
 
 /* ===================================
    SERVICES
