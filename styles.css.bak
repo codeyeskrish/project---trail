@@ -228,204 +228,25 @@ body {
 }
 
 /* ===================================
-   HERO 2-COLUMN LAYOUT
+   CAROUSEL / HERO
    =================================== */
-.hero-main-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    align-items: stretch;
-    padding: 30px 0;
-}
-
-.hero-text-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.main-headline {
-    font-size: 2.8rem;
-    color: var(--maroon-primary);
-    line-height: 1.2;
-    margin-bottom: 12px;
-    font-weight: 800;
-}
-
-.sub-headline {
-    font-size: 1.1rem;
-    color: var(--grey-dark);
-    margin-bottom: 20px;
-}
-
-.hero-ctas {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 25px;
-}
-
-.btn {
-    padding: 12px 25px;
-    border-radius: 5px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: var(--transition);
-    border: 2px solid transparent;
-    cursor: pointer;
-}
-
-.btn-primary {
-    background: var(--maroon-primary);
-    color: var(--white);
-}
-
-.btn-primary:hover {
-    background: var(--maroon-dark);
-}
-
-.btn-secondary {
-    background: transparent;
-    color: var(--maroon-primary);
-    border-color: var(--maroon-primary);
-}
-
-.btn-secondary:hover {
-    background: var(--maroon-primary);
-    color: var(--white);
-}
-
-.hero-carousel-wrapper {
-    position: relative;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    height: 500px;
-}
-
-.hero-vision-mission {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
-}
-
-.vm-box {
-    background: var(--white);
-    padding: 15px 20px;
-    border-left: 4px solid var(--gold);
-    border-radius: 8px;
-    box-shadow: 0 3px 15px var(--shadow);
-}
-
-.vm-box h4 {
-    color: var(--maroon-primary);
-    margin-bottom: 5px;
-    font-size: 1.1rem;
-}
-
-.vm-box p {
-    font-size: 0.85rem;
-    color: var(--grey-medium);
-}
-
-.desktop-only {
-    display: grid;
-}
-
-.mobile-only {
-    display: none;
-}
-
-/* Accordion styles */
-.hero-accordion {
-    display: none;
-}
-
-.accordion-item {
-    background: var(--white);
-    border-radius: 8px;
-    margin-bottom: 10px;
-    box-shadow: 0 3px 15px var(--shadow);
-    overflow: hidden;
-}
-
-.accordion-item summary {
-    padding: 15px 20px;
-    font-weight: 600;
-    color: var(--maroon-primary);
-    cursor: pointer;
-    list-style: none;
-    position: relative;
-    border-left: 4px solid var(--gold);
-}
-
-.accordion-item summary::after {
-    content: '+';
-    position: absolute;
-    right: 20px;
-    font-size: 1.5rem;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.accordion-item[open] summary::after {
-    content: '-';
-}
-
-.accordion-content {
-    padding: 15px 20px;
-    border-top: 1px solid var(--grey-light);
-    font-size: 0.95rem;
-}
-
-@media (max-width: 992px) {
-    .hero-main-container {
-        display: flex;
-        flex-direction: column;
-        padding: 20px 15px;
-    }
-
-    .main-headline {
-        font-size: 2.5rem;
-    }
-
-    .hero-text-content {
-        order: 1;
-    }
-
-    .hero-carousel-wrapper {
-        order: 2;
-        margin: 20px 0 30px;
-        min-height: 350px;
-    }
-
-    .desktop-only {
-        display: none !important;
-    }
-
-    .hero-accordion.mobile-only {
-        display: block;
-        order: 3;
-    }
-}
-
 .carousel {
     position: relative;
     width: 100%;
-    height: 100% !important;
+    height: 450px;
     overflow: hidden;
 }
 
 .carousel-track {
     display: flex;
     height: 100%;
-    width: 100%;
 }
 
 .carousel-slide {
-    width: 100%;
-    flex: 0 0 100%;
+    min-width: 100%;
     height: 100%;
     position: relative;
+    flex-shrink: 0;
 }
 
 .carousel-slide img {
@@ -442,22 +263,22 @@ body {
     text-align: center;
     color: var(--white);
     background: rgba(139, 21, 56, 0.532);
-    padding: 20px 30px;
+    padding: 40px 60px;
     border-radius: 10px;
     backdrop-filter: blur(5px);
     z-index: 2;
-    max-width: 90%;
+    max-width: 800px;
 }
 
 .carousel-content h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+    font-size: 3rem;
+    margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .carousel-content p {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
