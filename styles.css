@@ -16,7 +16,9 @@
     --grey-medium: #9E9E9E;
     --grey-dark: #424242;
     --white: #FFFFFF;
-    --shadow: rgba(139, 21, 56, 0.1);
+    --shadow: rgba(139, 21, 56, 0.08);
+    --shadow-hover: rgba(139, 21, 56, 0.18);
+    --gradient-primary: linear-gradient(135deg, var(--maroon-primary) 0%, var(--maroon-dark) 100%);
     --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -134,8 +136,9 @@ body {
     bottom: 0;
     height: 3px;
     width: 0;
-    background-color: var(--maroon-primary);
+    background: var(--gradient-primary);
     transition: width 0.3s ease;
+    border-radius: 2px;
 }
 
 .nav-link:hover::after,
@@ -246,10 +249,14 @@ body {
 
 .main-headline {
     font-size: 2.8rem;
-    color: var(--maroon-primary);
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     line-height: 1.2;
     margin-bottom: 12px;
     font-weight: 800;
+    letter-spacing: -0.5px;
 }
 
 .sub-headline {
@@ -265,22 +272,27 @@ body {
 }
 
 .btn {
-    padding: 12px 25px;
-    border-radius: 5px;
+    padding: 12px 28px;
+    border-radius: 8px;
     font-weight: 600;
     text-decoration: none;
-    transition: var(--transition);
+    transition: all 0.3s ease;
     border: 2px solid transparent;
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-primary {
-    background: var(--maroon-primary);
+    background: var(--gradient-primary);
     color: var(--white);
+    box-shadow: 0 4px 15px rgba(139, 21, 56, 0.25);
 }
 
 .btn-primary:hover {
-    background: var(--maroon-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(139, 21, 56, 0.35);
 }
 
 .btn-secondary {
@@ -292,6 +304,8 @@ body {
 .btn-secondary:hover {
     background: var(--maroon-primary);
     color: var(--white);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(139, 21, 56, 0.2);
 }
 
 .hero-carousel-wrapper {
@@ -312,8 +326,15 @@ body {
     background: var(--white);
     padding: 15px 20px;
     border-left: 4px solid var(--gold);
-    border-radius: 8px;
-    box-shadow: 0 3px 15px var(--shadow);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px var(--shadow);
+    transition: var(--transition);
+}
+
+.vm-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px var(--shadow-hover);
+    border-left-color: var(--maroon-primary);
 }
 
 .vm-box h4 {
@@ -441,10 +462,13 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     color: var(--white);
-    background: rgba(139, 21, 56, 0.532);
-    padding: 20px 30px;
-    border-radius: 10px;
-    backdrop-filter: blur(5px);
+    background: rgba(139, 21, 56, 0.65);
+    padding: 24px 36px;
+    border-radius: 16px;
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     z-index: 2;
     max-width: 90%;
 }
@@ -515,13 +539,14 @@ body {
 .highlight-card {
     background: var(--white);
     padding: 15px 10px;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px var(--shadow);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px var(--shadow);
     text-align: center;
     transition: var(--transition);
     opacity: 0;
     transform: translateY(30px);
     animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    border: 1px solid rgba(255,255,255,0.8);
 }
 
 .highlight-card:nth-child(1) {
@@ -549,8 +574,9 @@ body {
 
 .highlight-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 30px var(--shadow);
+    box-shadow: 0 15px 35px var(--shadow-hover);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-color: var(--gold);
 }
 
 .highlight-icon {
