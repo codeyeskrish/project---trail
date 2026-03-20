@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function animateCounter(element) {
         const target = parseInt(element.getAttribute('data-target'));
-        const duration = 2000;
-        const increment = target / (duration / 16);
+        const duration = 1000;
+        const increment = target / (duration / 8);
         let current = 0;
 
         const updateCounter = () => {
@@ -90,8 +90,10 @@ document.addEventListener('DOMContentLoaded', function () {
         // Re-select all slides including clones
         const allSlides = document.querySelectorAll('.carousel-slide');
 
-        // Set initial position to show the first real slide
+        // Set initial position to show the first real slide properly without animating
+        carouselTrack.style.transition = 'none';
         carouselTrack.style.transform = `translateX(-100%)`;
+        carouselTrack.offsetHeight; // force reflow
 
         function updateSlide(index, transition = true) {
             if (transition) {
@@ -142,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function () {
             prevBtn.addEventListener('click', prevSlide);
 
             // Auto-advance only to the right
-            setInterval(nextSlide, 5000);
+            setInterval(nextSlide, 3000);
         }
     }
 
