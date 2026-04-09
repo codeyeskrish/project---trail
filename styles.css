@@ -41,14 +41,7 @@ body {
 
 /* Service & Product pages background */
 body.service-product-page {
-    background-color: #ffffff;
-    background-image:
-        linear-gradient(rgba(255, 255, 255, 0.40), rgba(255, 255, 255, 0.40)),
-        url(./img/defense-bg.png);
-    background-size: auto, cover;
-    background-position: 0 0, center top;
-    background-repeat: repeat, no-repeat;
-    background-attachment: scroll, scroll;
+    background: var(--white) url(./img/light-grey-dots-background_78370-2583.jpg) repeat;
 }
 
 /* ===================================
@@ -1303,7 +1296,7 @@ body.service-product-page {
    =================================== */
 .page-hero {
     background: linear-gradient(135deg, var(--maroon-primary) 0%, var(--maroon-dark) 100%);
-    padding: 100px 0 80px;
+    padding: 20px 0 20px;
     text-align: center;
     color: var(--white);
 }
@@ -1328,6 +1321,41 @@ body.service-product-page {
 
 .cons2 {
     background-image: url(./img/telecom.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cons3 {
+    background-image: url(./img/products-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cons-antenna {
+    background-image: url(./img/bg-antenna.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cons-rf {
+    background-image: url(./img/bg-rf.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cons-environmental {
+    background-image: url(./img/bg-environmental.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cons-missile {
+    background-image: url(./img/bg-missile.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
